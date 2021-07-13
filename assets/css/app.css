@@ -1,0 +1,53 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #1c1c1c;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #853839;
+}
+
+.search {
+  padding: 20px;
+  background-color: #579292;
+  color: #fff;
+}
+
+.search label {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  display: block;
+  margin-top: 0;
+}
+
+.results {
+  display: block;
+  padding: 10px;
+}
+
+.name {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 10px;
+  list-style-type: none;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.input {
+  padding: 10px 2%;
+  border: none;
+  width: 96%;
+  font-size: 25px;
+  border-radius: 5px;
+}
