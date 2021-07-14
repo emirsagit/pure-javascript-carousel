@@ -1,53 +1,56 @@
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
-  background: #1c1c1c;
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  margin-top: 20px;
-  background-color: #853839;
-}
-
-.search {
-  padding: 20px;
-  background-color: #579292;
-  color: #fff;
-}
-
-.search label {
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  margin: 10px 0;
-  display: block;
-  margin-top: 0;
-}
-
-.results {
-  display: block;
-  padding: 10px;
-}
-
-.name {
+img {
   width: 100%;
-  padding: 10px 0;
-  text-align: center;
-  background-color: white;
-  margin-bottom: 10px;
-  list-style-type: none;
-  border-radius: 5px;
-  font-size: 17px;
-  font-weight: bold;
+  height: auto;
 }
 
-.input {
-  padding: 10px 2%;
+.carousel {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item--visible {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+.prev, .next {
+  border-radius: 100px;
+  font-size: 1.5rem;
   border: none;
-  width: 96%;
-  font-size: 25px;
-  border-radius: 5px;
+  background: #fff;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.prev {
+  left: 2%;
+}
+
+.next {
+  right: 2%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
